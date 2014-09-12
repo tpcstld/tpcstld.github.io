@@ -10,14 +10,9 @@ title: Jerry Jiang
 		{% include header.html %}
 		<div class="row">
 			<div class="small-12 columns">
-				<a target="_blank" href="//play.google.com/store/apps/details?id=com.tpcstld.twozerogame">2048 for Android</a>
-				<br>
-				<a target="_blank" href="//csclub.uwaterloo.ca/~j39jiang/youtubedownloader/">Youtube Downloader</a>
-				<br>
-				<a target="_blank" href="//tpcstld-sl.appspot.com/">Shortlink Generater</a>
-				<br>
-				<a target="_blank" href="//tpcstld-lcskorea.appspot.com/">LCS Players in Korea Tracker</a>
-				<br>
+			{% for project in site.data.projects %}
+				<a target="_blank" href="{{ project.url }}">{{ project.name }}</a>
+			{% endfor %}
 			</div>
 		</div>
 		{% include staticbottom.html %}
