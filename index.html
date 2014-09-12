@@ -9,12 +9,11 @@ title: Jerry Jiang
     <body>
 		{% include header.html %}
 		<div class="row">
-			<div class="small-12 columns">
 			{% for project in site.data.projects %}
-				<a target="_blank" href="{{ project.url }}">{{ project.name }}</a>
-				<br>
-			{% endfor %}
+			<div class="small-3 columns">
+				<a class="button" target="_blank" href="{{ project.url }}">{{ project.name }}</a>
 			</div>
+			{% endfor %}
 		</div>
 		{% include staticbottom.html %}
     </body>
