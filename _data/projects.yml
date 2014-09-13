@@ -7,7 +7,7 @@
 - name: Youtube Downloader
   url: //csclub.uwaterloo.ca/~j39jiang/youtubedownloader/
   
-- name: Shortlink Generator
+- name: Link Shortener
   url: //ls.tpcstld.me
   
 - name: LCS Players in Korea Tracker
