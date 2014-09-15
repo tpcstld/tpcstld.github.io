@@ -9,7 +9,7 @@
 {% if include.current_page == webpage.name %}
 	<strong>{{ webpage.name }}</strong>
 {% else %}
-	<a href="{{ page.url }}">{{ webpage.name }}</a>
+	<a href="{{ webpage.url }}">{{ webpage.name }}</a>
 {% endif %}
 {% if forloop.last == false %}
 	<strong> · </strong>
