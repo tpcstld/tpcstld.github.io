@@ -6,11 +6,11 @@
 		</div>
 	</div>
 	<div id="nav-row" class="row text-center">
-	{% for page in webpages %}
-	{% if include.current_page == page.name %}
-		<strong>{{ page.name }}</strong>
+	{% for webpage in site.data.webpages %}
+	{% if include.current_page == webpage.name %}
+		<strong>{{ webpage.name }}</strong>
 	{% else %}
-		<a href="{{ page.url }}">{{ page.name }}</a>
+		<a href="{{ page.url }}">{{ webpage.name }}</a>
 	{% endif %}
 	{% if forloop.last == false %}
 		<span> · </span>
