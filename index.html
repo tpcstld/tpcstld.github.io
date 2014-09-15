@@ -10,7 +10,7 @@ title: Jerry Jiang
 		{% include header.html current_page="Projects" %}
 		<div class="row">
 			{% for project in site.data.projects %}
-			<div class="small-12 medium-4 columns text-center {% if forloop.last %}end{% endif %}">
+			<div class="small-12 medium-6 large-4 columns text-center {% if forloop.last %}end{% endif %}">
 				<a class="button expand" target="_blank" href="{{ project.url }}">
 					<span>{{ project.name }}</span>
 					<br>
