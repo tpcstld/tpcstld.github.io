@@ -1,20 +1,18 @@
-<div id="header">
-	<div id="title-row" class="row text-center">
-		<div class="small-12 columns">
-			<h1>Jerry Jiang</h1>
-			<strong>2A Software Engineering, University of Waterloo</strong>
-		</div>
+<div id="title-row" class="row text-center">
+	<div class="small-12 columns">
+		<h1>Jerry Jiang</h1>
+		<strong>2A Software Engineering, University of Waterloo</strong>
 	</div>
-	<div id="nav-row" class="row text-center">
-	{% for webpage in site.data.webpages %}
-	{% if include.current_page == webpage.name %}
-		<strong>{{ webpage.name }}</strong>
-	{% else %}
-		<a href="{{ page.url }}">{{ webpage.name }}</a>
-	{% endif %}
-	{% if forloop.last == false %}
-		<span> · </span>
-	{% endif %}
-	{% endfor %}
-	</div>
+</div>
+<div id="nav-row" class="row text-center">
+{% for webpage in site.data.webpages %}
+{% if include.current_page == webpage.name %}
+	<strong>{{ webpage.name }}</strong>
+{% else %}
+	<a href="{{ page.url }}">{{ webpage.name }}</a>
+{% endif %}
+{% if forloop.last == false %}
+	<span> · </span>
+{% endif %}
+{% endfor %}
 </div>
