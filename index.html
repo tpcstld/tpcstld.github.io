@@ -4,10 +4,10 @@ title: Jerry Jiang
 <!DOCTYPE html>
 <html>
     <head>
-		{% include statichead.html current_page="Projects" %}
+		{% include statichead.html %}
     </head>
     <body>
-		{% include header.html %}
+		{% include header.html current_page="Projects" %}
 		<div class="row">
 			{% for project in site.data.projects %}
 			<div class="small-12 medium-4 columns text-center {% if forloop.last %}end{% endif %}">
