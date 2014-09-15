@@ -11,7 +11,11 @@ title: Jerry Jiang
 		<div class="row">
 			{% for project in site.data.projects %}
 			<div class="small-12 medium-4 columns text-center {% if forloop.last %}end{% endif %}">
-				<a class="button expand" target="_blank" href="{{ project.url }}">{{ project.name }}</a>
+				<a class="button expand" target="_blank" href="{{ project.url }}">
+					<span>{{ project.name }}</span>
+					<br>
+					<span><small>{{ project.description }}</small></span>
+				</a>
 			</div>
 			{% endfor %}
 		</div>
