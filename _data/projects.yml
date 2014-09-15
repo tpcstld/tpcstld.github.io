@@ -8,7 +8,7 @@
   
 - name: Youtube Downloader
   url: //csclub.uwaterloo.ca/~j39jiang/youtubedownloader/
-  description: You can download from more sites too, if you know the secret password.
+  description: Not just youtube, if you know the secret password.
   
 - name: Link Shortener
   url: //ls.tpcstld.me
