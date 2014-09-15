@@ -2,10 +2,6 @@
   url: //play.google.com/store/apps/details?id=com.tpcstld.twozerogame
   description: 37500+ downloads, 4.4 rating, 0 ads.
   
-- name: Jetris
-  url: //github.com/tpcstld/Jetris
-  description: Tetris with an actual settings menu... and a J.
-  
 - name: Youtube Downloader
   url: //csclub.uwaterloo.ca/~j39jiang/youtubedownloader/
   description: Not just youtube, if you know the secret password.
@@ -13,6 +9,10 @@
 - name: Link Shortener
   url: //ls.tpcstld.me
   description: Making long links, uh, still pretty long.
+  
+- name: Jetris
+  url: //github.com/tpcstld/Jetris
+  description: Tetris with an actual settings menu... and a J.
   
 - name: LCS Players in Korea Tracker
   url: //tpcstld-lcskorea.appspot.com/
