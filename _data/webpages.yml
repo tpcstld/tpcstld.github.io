@@ -3,3 +3,6 @@
 
 - name: Resume
   url: /resume
+  
+- name: About Me
+  url: /about
