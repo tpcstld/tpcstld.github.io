@@ -10,6 +10,10 @@
   url: //ls.tpcstld.me
   description: Making long links, uh, still pretty long.
   
+- name: Text To Email
+  url: //github.com/tpcstld/TextToMail
+  description: Text an email and a message to 647-503-4767
+  
 - name: Jetris
   url: //github.com/tpcstld/Jetris
   description: Tetris with an actual settings menu... and a J.
