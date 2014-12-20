@@ -1,2 +1,9 @@
-<h1>{{ decideCtrl.decision }}</h1>
-<h2>HTHT</h2>
+<div ng-show="decideCtrl.decision">
+    <h1>Yes!</h1>
+    <h2>You should do it!</h2>
+</div>
+<div ng-hide="decideCtrl.decision">
+    <h1>No!</h1>
+    <h2>Don't do it!</h2>
+</div>
+<h1>HTHT</h1>
