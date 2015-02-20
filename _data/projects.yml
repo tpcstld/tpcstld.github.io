@@ -1,23 +1,23 @@
 - name: 2048 for Android
   url: //play.google.com/store/apps/details?id=com.tpcstld.twozerogame
-  description: 60000+ downloads, 4.4 rating, 0 ads.
-  
+  description: 70000+ downloads, 4.4 rating, 0 ads.
+
 - name: Youtube Downloader
   url: //csclub.uwaterloo.ca/~j39jiang/youtubedownloader/
   description: Not just youtube, if you know the secret password.
-  
+
 - name: Link Shortener
   url: //ls.tpcstld.me
   description: Making long links, uh, still pretty long.
-  
+
 - name: Text To Email
   url: //github.com/tpcstld/TextToMail
   description: Text "your@email.com Hello World!" to 647-503-4767.
-  
+
 - name: Jetris
   url: //github.com/tpcstld/Jetris
   description: Tetris with an actual settings menu... and a J.
-  
+
 - name: LCS Players in Korea Tracker
   url: //lcs.tpcstld.me
   description: Hai's pretty high.

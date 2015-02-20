@@ -4,26 +4,26 @@ title: Jerry Jiang (tpcstld)
 <!DOCTYPE html>
 <html>
     <head>
-		{% include statichead.html %}
+        {% include statichead.html %}
     </head>
     <body>
-		{% include header.html current_page="Projects" %}
-		<div class="row">
-			{% for project in site.data.projects %}
-			<div class="small-12 medium-6 large-4 columns text-center {% if forloop.last %}end{% endif %}">
-				<a class="button expand" href="{{ project.url }}">
-					<span>{{ project.name }}</span>
-					<br>
-					<span><small>{{ project.description }}</small></span>
-				</a>
-			</div>
-			{% endfor %}
-		</div>
-		<div class="row">
-			<div class="small-12 text-center">
-				<span>See my <a href="//github.com/tpcstld">GitHub</a> for more information.</span>
-			</div>
-		</div>
-		{% include staticbottom.html %}
+        {% include header.html current_page="Projects" %}
+        <div class="row">
+            {% for project in site.data.projects %}
+            <div class="small-12 medium-6 large-4 columns text-center {% if forloop.last %}end{% endif %}">
+                <a class="button expand" href="{{ project.url }}">
+                    <span>{{ project.name }}</span>
+                    <br>
+                    <span><small>{{ project.description }}</small></span>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <div class="small-12 text-center">
+                <span>See my <a href="//github.com/tpcstld">GitHub</a> for more information.</span>
+            </div>
+        </div>
+        {% include staticbottom.html %}
     </body>
 </html>

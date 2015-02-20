@@ -7,6 +7,6 @@ app.directive( 'yesNoDisplay',function() {
         controllerAs: 'decideCtrl',
         controller: function() {
             this.decision = Math.random() < 0.5;
-        }    
+        }
     };
 });
