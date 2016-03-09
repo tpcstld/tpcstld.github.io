@@ -33,3 +33,7 @@
 - name: KoL Wiki Refresher
   url: //tpcstld.me/kol
   description: Random page button was too small...
+
+- name: Temporary Messages
+  url: //text.tpcstld.me
+  description: Now you see it, now you don't!
