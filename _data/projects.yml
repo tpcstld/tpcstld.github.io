@@ -37,3 +37,11 @@
 - name: Temporary Messages
   url: //text.tpcstld.me
   description: Now you see it, now you don't!
+
+- name: Champion.gg Redirecter
+  url: //github.com/tpcstld/champredirect
+  description: Type less characters and more slang!
+
+- name: Streamer
+  url: //stream.tpcstld.me
+  description: Now you see me, now you don't!
