@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon Calculator</title>
+  </head>
+  <body>
+    <input
+        id="text"
+        placeholder="Enter types"
+        autofocus
+    />
+    <div>
+      <dl>
+        <b><dt>Resists damage from</dt></b>
+        <div id="resist">
+        </div>
+      </dl>
+      <dl>
+        <b><dt>Deals extra damage to</dt></b>
+        <div id="strong">
+        </div>
+      </dl>
+      <dl>
+        <b><dt>Weak to damage from</dt></b>
+        <div id="weak">
+        </div>
+      </dl>
+      <dl>
+        <b><dt>Deals less damage to</dt></b>
+        <div id="bad">
+        </div>
+      </dl>
+    </div>
+    <script src="http://underscorejs.org/underscore-min.js"></script>
+    <script src="type_info.js"></script>
+    <script src="calculate.js"></script>
+  </body>
+</html>
