@@ -14,7 +14,12 @@ function addNodes(data, id) {
 }
 
 function showResults(results) {
-  addNodes(_(results.defense).pick(v => v < 1), "resist");
+  Object.keys(results.defense).forEach(x => {
+    if (results.defense[x] === 0) {
+      results.defense[x] = "IMMUNE";
+    }
+  });
+  addNodes(_(results.defense).pick(v => v < 1 || v === "IMMUNE"), "resist");
   addNodes(_(results.defense).pick(v => v > 1), "weak");
   addNodes(results.good_against, "strong");
 
