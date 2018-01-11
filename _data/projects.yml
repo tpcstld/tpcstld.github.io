@@ -6,6 +6,14 @@
   url: //youtube.tpcstld.me
   description: Not just youtube, if you know the secret password.
 
+- name: Streamer
+  url: //stream.tpcstld.me
+  description: Now you see me, now you don't!
+
+- name: Codenames
+  urls: //tpcstld.me/codenames
+  descrption: Go to /board for the spymaster.
+
 - name: Link Shortener
   url: //ls.tpcstld.me
   description: Making long links, uh, still pretty long.
@@ -38,6 +46,3 @@
   url: //github.com/tpcstld/champredirect
   description: Type less characters and more slang!
 
-- name: Streamer
-  url: //stream.tpcstld.me
-  description: Now you see me, now you don't!
