@@ -12,7 +12,7 @@
 
 - name: Codenames
   urls: //tpcstld.me/codenames
-  descrption: Go to /board for the spymaster.
+  description: Go to /board for the spymaster.
 
 - name: Link Shortener
   url: //ls.tpcstld.me
