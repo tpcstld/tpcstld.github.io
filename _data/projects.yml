@@ -22,6 +22,10 @@
   url: //github.com/tpcstld/TextToMail
   description: Text "your@email.com Hello World!" to 604-239-3233.
 
+- name: VIP without Flash
+  url: //vip.tpcstld.me
+  description: Long live HTML5!
+
 - name: Jetris
   url: //github.com/tpcstld/Jetris
   description: Tetris with an actual settings menu... and a J.
