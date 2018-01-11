@@ -8,14 +8,22 @@ title: Jerry Jiang (tpcstld)
     </head>
     <body>
         {% include header.html current_page="Projects" %}
-        <div class="row">
+        <div class="mdl-grid">
             {% for project in site.data.projects %}
-            <div class="small-12 medium-6 large-4 columns text-center {% if forloop.last %}end{% endif %}">
-                <a class="button expand" href="{{ project.url }}">
-                    <span>{{ project.name }}</span>
-                    <br>
-                    <span><small>{{ project.description }}</small></span>
-                </a>
+            <div class="mdl-cell mdl-cell--4-col">
+              <div class="mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand">
+                  <h4>{{ project.name }}</h4>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  {{ project.description }}
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ project.url }}">
+                    View project
+                  </a>
+                </div>
+              </div>
             </div>
             {% endfor %}
         </div>
