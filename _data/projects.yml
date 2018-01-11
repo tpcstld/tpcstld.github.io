@@ -11,7 +11,7 @@
   description: Now you see me, now you don't!
 
 - name: Codenames
-  urls: //tpcstld.me/codenames
+  url: //tpcstld.me/codenames
   description: Go to /board for the spymaster.
 
 - name: Link Shortener
