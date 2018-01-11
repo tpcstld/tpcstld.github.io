@@ -1,45 +1,18 @@
-<div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Jerry Jiang</span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        {% for webpage in site.data.webpages %}
-        <a class="mdl-navigation__link" href="{{ webpage.url }}">{{ webpage.name }}</a>
-        {% endfor %}
-      </nav>
+<div class="row text-center">
+    <div id="title-row" class="small-12 columns">
+        <h1 >Jerry Jiang</h1>
+        <strong>3A Software Engineering, University of Waterloo</strong>
     </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Jerry Jiang</span>
-    <nav class="mdl-navigation">
-      {% for webpage in site.data.webpages %}
-      <a class="mdl-navigation__link" href="{{ webpage.url }}">{{ webpage.name }}</a>
-      {% endfor %}
-    </nav>
-    <div class="mdl-layout-spacer"></div>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="//github.com">GitHub</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-  </main>
 </div>
-<!-- <div class="row text-center"> -->
-<!--     <div id="title-row" class="small-12 columns"> -->
-<!--         <h1 >Jerry Jiang</h1> -->
-<!--         <strong>3A Software Engineering, University of Waterloo</strong> -->
-<!--     </div> -->
-<!-- </div> -->
-<!-- <div id="nav-row" class="row text-center"> -->
-<!-- {% for webpage in site.data.webpages %} -->
-<!-- {% if include.current_page == webpage.name %} -->
-<!--     <strong>{{ webpage.name }}</strong> -->
-<!-- {% else %} -->
-<!--     <a href="{{ webpage.url }}">{{ webpage.name }}</a> -->
-<!-- {% endif %} -->
-<!-- {% if forloop.last == false %} -->
-<!--     <span> · </span> -->
-<!-- {% endif %} -->
-<!-- {% endfor %} -->
-<!-- </div> -->
+<div id="nav-row" class="row text-center">
+{% for webpage in site.data.webpages %}
+{% if include.current_page == webpage.name %}
+    <strong>{{ webpage.name }}</strong>
+{% else %}
+    <a href="{{ webpage.url }}">{{ webpage.name }}</a>
+{% endif %}
+{% if forloop.last == false %}
+    <span> · </span>
+{% endif %}
+{% endfor %}
+</div>
