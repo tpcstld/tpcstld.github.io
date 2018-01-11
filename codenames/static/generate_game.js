@@ -1,37 +1,3 @@
-// The types that a card can be.
-const CardType = {
-  // Cards corresponding to red agents.
-  RED: {
-    color: 'darkred',
-  },
-  // Cards corresponding to blue agents.
-  BLUE: {
-    color: 'darkblue',
-  },
-  // Cards corresponding to innocent bystanders.
-  NEUTRAL: {
-    color: '#D4B886',
-  },
-  // Card corresponding to the assassin.
-  ASSASSIN: {
-    color: 'black',
-  },
-};
-
-const GameDetails = {
-  BOARD_LENGTH: 5,
-  BOARD_WIDTH: 5,
-};
-
-/**
- * Shuffles an array in place.
- *
- * @param array The array to shuffle.
- */
-function _fy(a,b,c,d){
-  c=a.length;while(c)b=Math.random()*(--c+1)|0,d=a[c],a[c]=a[b],a[b]=d
-}
-
 /**
  * Generates a 5x5 grid corresponding to the status of the game board in code
  * words. Each element in the grid will be a single CardType.
@@ -51,7 +17,7 @@ function generateGame(seed) {
   const positions = Array.apply(null, {
         length: GameDetails.BOARD_WIDTH * GameDetails.BOARD_LENGTH,
     }).map((a, i) => i);
-  _fy(positions);
+  shuffleArray(positions);
 
   const board = Array.from(Array(GameDetails.BOARD_LENGTH))
     .map((_, yy) => Array.from(Array(GameDetails.BOARD_WIDTH))
