@@ -1,0 +1,57 @@
+.projectContainer {
+  --num-columns: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-columns), 1fr);
+  column-gap: 30px;
+  row-gap: 1.25rem;
+}
+
+.project {
+  background-color: #008cba;
+  transition: background-color 300ms ease-out;
+  color: #ffffff;
+
+  padding-top: 1rem;
+  padding-bottom: 1.0625rem;
+
+  text-align: center;
+  text-decoration: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  line-height: normal;
+}
+
+.description {
+  font-size: 60%;
+  box-sizing: border-box;
+}
+
+.project:hover,
+.project:focus {
+  background-color: #007095;
+}
+
+.github {
+  margin-top: 25px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .projectContainer {
+    --num-columns: 2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projectContainer {
+    --num-columns: 3;
+  }
+}

@@ -1,0 +1,35 @@
+.container a {
+  color: #008cba;
+  text-decoration: none;
+}
+
+.container a:focus,
+.container a:hover {
+  color: #0078a0;
+}
+
+.section {
+  font-size: 1.4375rem;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.list {
+  margin-left: 1.1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  list-style-position: outside;
+  margin-top: 0;
+  padding-inline-start: 0;
+}
+
+.date {
+  float: right;
+}
+
+.pdf {
+  width: 100%;
+  text-align: center;
+}

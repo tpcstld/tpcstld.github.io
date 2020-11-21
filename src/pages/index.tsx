@@ -1,5 +1,3 @@
-import React from 'react';
+import ProjectPage from '../info-pages/ProjectPage';
 
-export default function Home() {
-  return <div>htht</div>;
-}
+export default ProjectPage;

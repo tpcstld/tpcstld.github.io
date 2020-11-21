@@ -1,0 +1,28 @@
+.outerContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  --page-gutter: 24px;
+
+  width: 100%;
+  max-width: 62.5rem;
+
+  box-sizing: border-box;
+  padding-left: var(--page-gutter);
+  padding-right: var(--page-gutter);
+
+  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  color: #23272a;
+  line-height: 150%;
+  text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    --page-gutter: 0px;
+  }
+}
