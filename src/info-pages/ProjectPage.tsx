@@ -28,8 +28,9 @@ function Project({project}: ProjectProps) {
 export default function ProjectPage() {
   return (
     <PageWrapper>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: 'en'}}>
         <title>Jerry Jiang (tpcstld)</title>
+        <meta name="description" content="My projects!" />
       </Helmet>
       <Header currentRoute={WebRoutes.PROJECTS} />
       <div className={styles.projectContainer}>

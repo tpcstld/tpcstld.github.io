@@ -10,8 +10,9 @@ import styles from './AboutPage.module.css';
 export default function AboutPage() {
   return (
     <PageWrapper>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: 'en'}}>
         <title>About - Jerry Jiang (tpcstld)</title>
+        <meta name="description" content="About me!" />
       </Helmet>
       <Header currentRoute={WebRoutes.ABOUT} />
       <div className={styles.container}>

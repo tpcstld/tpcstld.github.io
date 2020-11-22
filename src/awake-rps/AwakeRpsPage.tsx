@@ -156,8 +156,12 @@ export default function AwakeRpsPage() {
 
   return (
     <PageWrapper>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: 'en'}}>
         <title>Awake RPS Calculator</title>
+        <meta
+          name="description"
+          content="MapleStory Awake Rock Paper Scissors calculator."
+        />
       </Helmet>
       <div className={styles.header}>
         <h1>Awake RPS Calculator</h1>

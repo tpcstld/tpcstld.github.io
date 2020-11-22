@@ -151,8 +151,9 @@ function WorkExperience({item}: WorkExperienceProps) {
 export default function ResumePage() {
   return (
     <PageWrapper>
-      <Helmet>
+      <Helmet htmlAttributes={{lang: 'en'}}>
         <title>Resume - Jerry Jiang (tpcstld)</title>
+        <meta name="description" content="My resume!" />
       </Helmet>
       <Header currentRoute={WebRoutes.RESUME} />
       <div className={styles.container}>

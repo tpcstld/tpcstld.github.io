@@ -2,7 +2,7 @@ install:
 	npm install
 
 build:
-	rm -rf docs
+	rm -rf docs public
 	mkdir docs
 	cp CNAME docs/CNAME
 	touch docs/.nojekyll
