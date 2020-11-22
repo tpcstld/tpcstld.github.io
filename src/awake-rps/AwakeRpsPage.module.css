@@ -1,0 +1,72 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reset {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+
+  padding: 8px;
+}
+
+.selectorContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.selectorItem {
+  padding: 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectorButton {
+  width: 100%;
+  padding-top: calc(50% - 8px);
+  padding-bottom: calc(50% - 8px);
+}
+
+.selectorButtonText {
+  font-size: 16px;
+}
+
+.selectorItemCount {
+  text-align: center;
+}
+
+.table {
+  margin-top: 8px;
+}
+
+.choices,
+.numbers {
+  padding: 4px;
+}
+
+.choices {
+  padding-right: 24px;
+}
+
+.heading {
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.numbers {
+  text-align: right;
+}
+
+.good {
+  background-color: green;
+  color: white;
+}
+
+.bad {
+  background-color: red;
+  color: white;
+}
