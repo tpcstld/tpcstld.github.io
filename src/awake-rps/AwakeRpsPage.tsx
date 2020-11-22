@@ -132,7 +132,7 @@ function AnalysisSection({
           </td>
           <td
             className={`${styles.numbers} ${getProbabilityStyles(
-              ev.lossChance,
+              -ev.lossChance,
             )}`}
           >
             {ev.lossChance.toFixed(2)}
