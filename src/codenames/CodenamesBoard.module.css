@@ -1,0 +1,52 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.card {
+  padding: 8px;
+  padding-top: 25%;
+  padding-bottom: 25%;
+  box-sizing: border-box;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+}
+
+.interactable {
+  cursor: pointer;
+}
+
+.typeUnknown {
+  border: 1px solid black;
+}
+
+.typeRed {
+  background-color: darkred;
+  color: white;
+}
+
+.typeBlue {
+  background-color: darkblue;
+  color: white;
+}
+
+.typeNeutral {
+  background-color: #d4b886;
+}
+
+.typeAssassin {
+  background-color: black;
+  color: white;
+}
+
+.cardText {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 16px;
+}

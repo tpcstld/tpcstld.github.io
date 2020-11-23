@@ -13,5 +13,6 @@ module.exports = {
         trackingId: 'UA-31447417-3',
       },
     },
+    'gatsby-plugin-split-css',
   ],
 };

@@ -1,0 +1,30 @@
+import {useEffect, useState} from 'react';
+
+import {
+  GameState,
+  CodenamesCardType,
+  NUM_CARDS,
+  CodenamesCard,
+} from './CodenameConstants';
+import generateGame from './generateGame';
+
+const DEFAULT_GAME_STATE: GameState = {
+  firstPlayer: CodenamesCardType.BLUE,
+  board: Array(NUM_CARDS)
+    .fill(null)
+    .map<CodenamesCard>(() => ({
+      type: CodenamesCardType.UNKNOWN,
+      content: 'Loading...',
+    })),
+};
+
+export default function useCodenamesGameState(): GameState {
+  const [gameState, setGameState] = useState(DEFAULT_GAME_STATE);
+
+  useEffect(() => {
+    // TODO: Determine the game seed.
+    setGameState(generateGame('htht'));
+  }, []);
+
+  return gameState;
+}
