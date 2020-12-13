@@ -104,6 +104,10 @@ function parseInput(input: string): UserInput {
   const skills = new Set<string>();
 
   for (const line of lines) {
+    if (line === '' || line.startsWith('#')) {
+      continue;
+    }
+
     const n = line.split(' ');
     if (n.length !== 3) {
       throw new Error('Bad Parsing');
@@ -156,6 +160,7 @@ export default function NodeCalcPage() {
   );
   const [working, setWorking] = useState(false);
   const [input, setInput] = useState('');
+  const [error, setError] = useState<string | null>(null);
 
   const handleChangeInput = useCallback(
     (event: ChangeEvent<HTMLTextAreaElement>) => {
@@ -167,8 +172,13 @@ export default function NodeCalcPage() {
   function test() {
     setWorking(true);
     setTimeout(() => {
-      const userInput = parseInput(input);
-      setResult(calculateBestNodes(userInput.skills, userInput.nodes, []));
+      try {
+        const userInput = parseInput(input);
+        setResult(calculateBestNodes(userInput.skills, userInput.nodes, []));
+        setError(null);
+      } catch (e) {
+        setError(e.message);
+      }
       setWorking(false);
     }, 0);
   }
@@ -189,6 +199,7 @@ export default function NodeCalcPage() {
         <button onClick={test} disabled={working}>
           {working ? 'Solving...' : 'Solve'}
         </button>
+        {error != null ? <span>{error}</span> : null}
         <ResultView result={result} />
       </div>
     </div>
