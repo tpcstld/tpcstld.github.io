@@ -7,6 +7,7 @@ import {
   CodenamesCard,
 } from './CodenameConstants';
 import generateGame from './generateGame';
+import getGameSeed from './getGameSeed';
 
 const DEFAULT_GAME_STATE: GameState = {
   firstPlayer: CodenamesCardType.BLUE,
@@ -22,8 +23,7 @@ export default function useCodenamesGameState(): GameState {
   const [gameState, setGameState] = useState(DEFAULT_GAME_STATE);
 
   useEffect(() => {
-    // TODO: Determine the game seed.
-    setGameState(generateGame('htht'));
+    setGameState(generateGame(getGameSeed()));
   }, []);
 
   return gameState;
