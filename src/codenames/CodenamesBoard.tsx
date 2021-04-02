@@ -16,10 +16,10 @@ const CARD_TYPE_STYLES = {
 
 interface CardProps {
   card: CodenamesCard;
-  onClick: () => void;
+  onSelect: () => void;
 }
 
-function Card({card, onClick}: CardProps) {
+function Card({card, onSelect}: CardProps) {
   const interactable = card.type === CodenamesCardType.UNKNOWN;
 
   return (
@@ -27,7 +27,7 @@ function Card({card, onClick}: CardProps) {
       className={`${styles.card} ${CARD_TYPE_STYLES[card.type]} ${
         interactable ? styles.interactable : ''
       }`}
-      onClick={onClick}
+      onDoubleClick={onSelect}
       tabIndex={interactable ? 0 : undefined}
     >
       <span className={styles.cardText}>{card.content}</span>
@@ -37,14 +37,14 @@ function Card({card, onClick}: CardProps) {
 
 interface CodenamesBoardProps {
   board: CodenamesBoardType;
-  onClick?: (index: number) => void;
+  onSelect?: (index: number) => void;
 }
 
-export default function CodenamesBoard({board, onClick}: CodenamesBoardProps) {
+export default function CodenamesBoard({board, onSelect}: CodenamesBoardProps) {
   return (
     <div className={styles.board}>
       {board.map((card, index) => (
-        <Card key={index} card={card} onClick={() => onClick?.(index)} />
+        <Card key={index} card={card} onSelect={() => onSelect?.(index)} />
       ))}
     </div>
   );

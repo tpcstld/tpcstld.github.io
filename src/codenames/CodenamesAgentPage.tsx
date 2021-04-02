@@ -27,7 +27,7 @@ export default function CodenamesAgentPage() {
     setBoard(getInitialBoardState(gameState.board));
   }, [gameState.board]);
 
-  function handleClick(index: number) {
+  function handleSelect(index: number) {
     const newBoard = [...board];
     newBoard[index].type = gameState.board[index].type;
     setBoard(newBoard);
@@ -41,7 +41,7 @@ export default function CodenamesAgentPage() {
       </Helmet>
 
       <div className={styles.board}>
-        <CodenamesBoard board={board} onClick={handleClick} />
+        <CodenamesBoard board={board} onSelect={handleSelect} />
       </div>
     </PageWrapper>
   );
