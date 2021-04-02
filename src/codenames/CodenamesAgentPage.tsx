@@ -33,6 +33,17 @@ export default function CodenamesAgentPage() {
     setBoard(newBoard);
   }
 
+  const numBlueLeft = gameState.board.filter(
+    (card, index) =>
+      card.type === CodenamesCardType.BLUE &&
+      board[index].type === CodenamesCardType.UNKNOWN,
+  ).length;
+  const numRedLeft = gameState.board.filter(
+    (card, index) =>
+      card.type === CodenamesCardType.RED &&
+      board[index].type === CodenamesCardType.UNKNOWN,
+  ).length;
+
   return (
     <PageWrapper>
       <Helmet htmlAttributes={{lang: 'en'}}>
@@ -42,6 +53,11 @@ export default function CodenamesAgentPage() {
 
       <div className={styles.board}>
         <CodenamesBoard board={board} onSelect={handleSelect} />
+      </div>
+
+      <div className={styles.remaining}>
+        <span className={styles.blue}>{numBlueLeft}</span>
+        <span className={styles.red}>{numRedLeft}</span>
       </div>
     </PageWrapper>
   );
