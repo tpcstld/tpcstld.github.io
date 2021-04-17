@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{GP3R:function(o,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return r}));var n=t("nKUr"),c=t("q1tI"),a="//play.google.com/store/apps/details?id=com.tpcstld.twozerogame";function r(){return Object(c.useLayoutEffect)((function(){location.replace(a)}),[]),Object(n.jsx)("a",{href:a,children:"Download on Google Play"})}}}]);
-//# sourceMappingURL=component---src-pages-2048-tsx-16841083ea6d3718e66b.js.map
