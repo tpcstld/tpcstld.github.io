@@ -14,5 +14,16 @@ module.exports = {
       },
     },
     'gatsby-plugin-split-css',
+    {
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            namedExport: false,
+          },
+        },
+      },
+    },
   ],
 };
