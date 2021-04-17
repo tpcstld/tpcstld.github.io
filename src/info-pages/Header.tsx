@@ -1,3 +1,5 @@
+import {Fragment} from 'react';
+
 import Link from '../common/Link';
 import WebRoutes from '../common/WebRoutes';
 
@@ -48,10 +50,10 @@ function RouteBanner({currentRoute}: RouteBannerProps) {
   return (
     <div className={styles.routeBanner}>
       {ROUTES.map((route, index) => (
-        <>
+        <Fragment key={route.url}>
           {index > 0 ? <span>{' · '}</span> : null}
           <RouteEntry currentRoute={currentRoute} route={route} />
-        </>
+        </Fragment>
       ))}
     </div>
   );
