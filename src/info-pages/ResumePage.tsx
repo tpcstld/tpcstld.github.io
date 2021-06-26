@@ -23,11 +23,11 @@ const WORK_EXPERIENCES: Array<WorkExperienceItem> = [
     website: 'https://discord.com',
     location: 'San Francisco, California',
     date: 'March 2020 - Present',
-    title: 'Software Engineer',
+    title: 'Senior Software Engineer',
     description: (
       <span>
         Implemented watching multiple streams. Rebuilt all marketing pages for
-        repositioning.
+        repositioning. Launched Stage channels and Stage discovery.
       </span>
     ),
   },
