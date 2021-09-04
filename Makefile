@@ -7,9 +7,9 @@ build:
 	mkdir docs
 	cp CNAME docs/CNAME
 	touch docs/.nojekyll
-	gatsby build
+	node_modules/gatsby/cli.js build
 	mv public/* docs
 
 develop:
 	rm -rf public
-	gatsby develop
+	node_modules/gatsby/cli.js develop
