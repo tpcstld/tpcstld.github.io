@@ -1,6 +1,5 @@
 install:
 	npm install
-	npm install -g gatsby
 
 build:
 	rm -rf docs public
