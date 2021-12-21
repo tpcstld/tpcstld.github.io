@@ -1,0 +1,34 @@
+.outerContainer {
+  position: relative;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.selectedButton {
+  background-color: green;
+  color: white;
+}
+
+.pendingScore {
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.commit {
+  grid-column: span 2;
+}
+
+.resetButton {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
