@@ -27,7 +27,8 @@ const WORK_EXPERIENCES: Array<WorkExperienceItem> = [
     description: (
       <span>
         Implemented watching multiple streams. Rebuilt all marketing pages for
-        repositioning. Launched Stage channels and Stage discovery.
+        "Your Place to Talk". Launched Stage channels, Stage discovery, and
+        Events.
       </span>
     ),
   },
