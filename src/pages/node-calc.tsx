@@ -92,10 +92,10 @@ function calculateBestNodes(
   return bestResult;
 }
 
-type UserInput = {
+interface UserInput {
   nodes: Array<NodeType>;
   skills: SkillsList;
-};
+}
 
 function parseInput(input: string): UserInput {
   const lines = input.split('\n');
@@ -176,8 +176,12 @@ export default function NodeCalcPage() {
         const userInput = parseInput(input);
         setResult(calculateBestNodes(userInput.skills, userInput.nodes, []));
         setError(null);
-      } catch (e) {
-        setError(e.message);
+      } catch (e: unknown) {
+        if (e instanceof Error) {
+          setError(e.message);
+        } else {
+          setError('Unknown error');
+        }
       }
       setWorking(false);
     }, 0);
@@ -189,6 +193,13 @@ export default function NodeCalcPage() {
         <title>Maplestory TriNode Solver</title>
         <meta name="description" content="Thinking is too hard." />
       </Helmet>
+      <div>Instructions:</div>
+      <ol>
+        <li>Figure out what your perfect tri skills are.</li>
+        <li>Make up some stable shorthand names for each skill.</li>
+        <li>Write down each nodestone using your shorthands with 3 perfect tri skills. Space between each skill. Newline between each node.</li>
+        <li>Solve!</li>
+      </ol>
       <div>
         <textarea
           value={input}
