@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktpcstld_site=self.webpackChunktpcstld_site||[]).push([[49],{4673:function(n,t,e){e.r(t),e.d(t,{default:function(){return c}});var s=e(5414),r=e(5893);function c(){return(0,r.jsxs)("div",{children:[(0,r.jsx)(s.q,{children:(0,r.jsx)("title",{children:"Privacy Policy - 2048 (Ads Free)"})}),(0,r.jsx)("span",{children:"2048 does not store or collect your personal information."}),(0,r.jsx)("br",{}),(0,r.jsx)("span",{children:"I don't track anything."})]})}}}]);
+//# sourceMappingURL=component---src-pages-2048-privacy-tsx-56f4e16d28786d829991.js.map
