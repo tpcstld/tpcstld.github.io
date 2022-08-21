@@ -23,12 +23,12 @@ const WORK_EXPERIENCES: Array<WorkExperienceItem> = [
     website: 'https://discord.com',
     location: 'San Francisco, California',
     date: 'March 2020 - Present',
-    title: 'Senior Software Engineer',
+    title: 'Staff Software Engineer',
     description: (
       <span>
-        Implemented watching multiple streams. Rebuilt all marketing pages for
-        "Your Place to Talk". Launched Stage channels, Stage discovery, and
-        Events.
+        Launched Stage channels, Stage discovery, Events, Student Hubs.
+        Implemented watching multiple streams. Rebuild all marketing pages for
+        "Your Place to Talk". Supported React Native Android performance.
       </span>
     ),
   },
@@ -52,10 +52,10 @@ const WORK_EXPERIENCES: Array<WorkExperienceItem> = [
     date: 'September 2017 - December 2017',
     title: 'Software Engineering Intern - Accounts',
     description: (
-      <>
-        <span>Maintained Riot's OAuth 2.0 and OpenID Connect services.</span>
-        <span>Helped implement a new account recovery redesign.</span>
-      </>
+      <span>
+        Maintained Riot's OAuth 2.0 and OpenID Connect services. Helped
+        implement a new account recovery redesign.
+      </span>
     ),
   },
   {
