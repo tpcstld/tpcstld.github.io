@@ -10,7 +10,7 @@ import {
 } from './CodenameConstants';
 import Words from './Words';
 
-function shuffleArray<T>(array: Array<T>, rng: seedrandom.prng): Array<T> {
+function shuffleArray<T>(array: Array<T>, rng: seedrandom.PRNG): Array<T> {
   let currentIndex = array.length;
   let temporaryValue;
   let randomIndex;

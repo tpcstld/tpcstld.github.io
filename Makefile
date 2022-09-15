@@ -1,6 +1,9 @@
 install:
 	npm install
 
+tsc:
+	node_modules/typescript/bin/tsc
+
 build:
 	rm -rf docs public
 	mkdir docs
