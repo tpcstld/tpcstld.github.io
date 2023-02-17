@@ -107,7 +107,9 @@ export default function BotterPage() {
   }
 
   function handleStop() {
-    fetch(`http://${ip}/stop`);
+    fetch(`http://${ip}/stop`, {
+      method: 'POST',
+    });
   }
 
   return (
