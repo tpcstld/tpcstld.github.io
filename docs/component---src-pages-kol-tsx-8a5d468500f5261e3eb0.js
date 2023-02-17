@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktpcstld_site=self.webpackChunktpcstld_site||[]).push([[914],{7497:function(t,n,e){e.r(n),e.d(n,{default:function(){return a}});var o={button:"KolPage-module--button--4b5a0"},c=e(5893),u="https://cdn.coldfront.net/thekolwiki/index.php/Special:Random";var a=function(){return(0,c.jsx)("button",{className:o.button,onClick:function(){fetch(u,{method:"HEAD",mode:"no-cors"}),location.href=u},children:"Random Page"})}}}]);
+//# sourceMappingURL=component---src-pages-kol-tsx-8a5d468500f5261e3eb0.js.map

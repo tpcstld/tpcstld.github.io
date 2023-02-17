@@ -1,5 +1,6 @@
 install:
 	npm install
+	brew install node@18
 
 tsc:
 	node_modules/typescript/bin/tsc
@@ -9,9 +10,9 @@ build:
 	mkdir docs
 	cp CNAME docs/CNAME
 	touch docs/.nojekyll
-	node_modules/gatsby/cli.js build
+	/usr/local/opt/node@18/bin/node node_modules/gatsby/cli.js build
 	mv public/* docs
 
 develop:
 	rm -rf public
-	node_modules/gatsby/cli.js develop
+	/usr/local/opt/node@18/bin/node node_modules/gatsby/cli.js develop

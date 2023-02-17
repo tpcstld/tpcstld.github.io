@@ -5,7 +5,7 @@ Github Pages; for all the static websites and stuff.
 # Setting up
 
 ```
-make build
+make
 ```
 
 # Developing
@@ -14,7 +14,7 @@ make build
 make develop
 ```
 
-# Before updating
+# Before committing
 
 ```
 make build
