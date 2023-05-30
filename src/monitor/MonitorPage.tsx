@@ -3,7 +3,8 @@ import {createWorker} from 'tesseract.js';
 
 import {useSavedValue} from '../utils/StorageUtils';
 
-import beep from './beep.mp3';
+import beep from './beep.wav';
+
 import styles from './MonitorPage.module.css';
 
 const FPS = 1;
@@ -164,7 +165,7 @@ export default function MonitorPage() {
         <canvas ref={canvasRef} className={styles.canvas} width="2000" />
         <textarea ref={textRef} />
       </div>
-      <video ref={videoRef} autoPlay muted crossorigin="anonymous" />
+      <video ref={videoRef} autoPlay muted crossOrigin="anonymous" />
       <audio ref={audioRef} src={beep} />
     </div>
   );
