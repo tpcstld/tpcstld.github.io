@@ -1,0 +1,8 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : {
+      "namespace": "android_app",
+      "package_name": "com.tpcstld.twozerogame",
+      "sha256_cert_fingerprints": ["7B:F9:C8:0F:3D:21:C9:80:7B:C3:C5:72:95:E1:B3:D1:14:A9:ED:CB:F5:78:B0:DB:25:0B:AF:23:39:24:93:AE"]
+    }
+}]

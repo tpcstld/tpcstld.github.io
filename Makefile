@@ -12,6 +12,7 @@ build:
 	touch docs/.nojekyll
 	/usr/local/opt/node@18/bin/node node_modules/gatsby/cli.js build
 	mv public/* docs
+	cp -r static/. docs
 
 develop:
 	rm -rf public
